@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>秋招 JD 黑话翻译器</title>
+  <link rel="stylesheet" href="./styles.css?v=cast-23" />
+</head>
+<body data-shell="ice">
+  <main class="desk">
+    <header class="station-header"><span class="station-name"><i aria-hidden="true"></i> 秋招破译局</span><span>秋招特别频段 / 001</span></header>
+    <div class="caption-row"><p class="desk-caption">JD 写得很漂亮<br /><span>实际真相是<span class="pink-mark">？</span></span></p><span class="character-sticker character-blue" aria-hidden="true"></span></div>
+    <!-- Original pixel mascot set; local assets only. -->
+    <div class="shell-picker" role="group" aria-label="选择机壳配色">
+      <span class="picker-label">换个壳玩 ↓</span>
+      <button type="button" data-shell-option="ice" aria-pressed="true"><i class="swatch swatch-ice" aria-hidden="true"></i>冰蓝粉</button>
+      <button type="button" data-shell-option="grape" aria-pressed="false"><i class="swatch swatch-grape" aria-hidden="true"></i>葡萄紫</button>
+      <button type="button" data-shell-option="acid" aria-pressed="false"><i class="swatch swatch-acid" aria-hidden="true"></i>黑酸绿</button>
+    </div>
+    <section class="pager" aria-label="岗位黑话 BB 机">
+      <span class="character-sticker character-green" aria-hidden="true"></span>
+      <span class="character-sticker character-pink" aria-hidden="true"></span>
+      <i class="screw screw-tl" aria-hidden="true"></i><i class="screw screw-tr" aria-hidden="true"></i>
+      <header class="device-header"><div><h1>黑话 <strong>BB</strong> 机</h1><p>HUMAN WORDS ONLY! / 接通人话</p></div><div class="speaker" aria-hidden="true"></div></header>
+      <div class="screen-bezel" id="screen-bezel"><div class="lcd">
+        <div class="lcd-status"><span><span class="signal" aria-hidden="true">▂▄▆</span> <span id="device-status">等待密电</span></span><span id="message-count">CH. 01</span></div>
+        <section id="input-panel" class="input-panel">
+          <label for="jd-input">把招聘黑话，发过来<span class="cursor" aria-hidden="true">_</span></label>
+          <textarea id="jd-input" maxlength="1000" spellcheck="false" placeholder="「自驱力强，抗压能力佳……」&#10;&#10;粘贴一段 JD，按下方破译键。"></textarea>
+          <div class="screen-bottom"><span>等待破译 ▸</span><span id="counter">000 / 1000</span></div>
+        </section>
+        <section id="result-panel" class="result-panel hidden">
+          <div class="message-from">招聘方说 / <span id="message-source"></span></div>
+          <div class="translation-label">翻译成人话 ↓</div>
+          <p id="transmission" class="transmission" aria-hidden="true"></p>
+          <p id="accessible-transmission" class="sr-only" aria-live="polite"></p>
+          <div class="screen-bottom"><span id="result-title"></span><button id="skip-typing" type="button" class="screen-skip hidden">直接看完 ↵</button><span id="received-mark">□</span></div>
+        </section>
+        <div id="decoding-panel" class="decoding-panel hidden" aria-hidden="true"><span>▥ ▥ ▥</span><p>正在拆解漂亮话…</p><small>自驱 → 抗压 → ？？</small></div>
+      </div></div>
+      <p id="key-hint" class="key-hint">↓ 按中间键，把黑话翻过来</p>
+      <div class="hardware-keys">
+        <button class="rocker" id="previous" type="button" aria-label="上一条人话" disabled><b aria-hidden="true">◀</b><span>上一条</span></button>
+        <button class="decode-key" id="decode" type="button"><span id="decode-label">破译这段话</span><small id="decode-sub">DECODE ↵</small></button>
+        <button class="rocker" id="next" type="button" aria-label="下一条人话" disabled><b aria-hidden="true">▶</b><span>下一条</span></button>
+      </div>
+      <div class="device-footer"><span>JD–050 <i aria-hidden="true">●</i> 只译漂亮话</span><span class="serial" aria-hidden="true">★ 100% 人话</span></div>
+      <i class="screw screw-bl" aria-hidden="true"></i><i class="screw screw-br" aria-hidden="true"></i>
+    </section>
+    <details id="field-note" class="field-note hidden">
+      <summary><span>✎ 留一张面试小抄</span><span class="note-toggle" aria-hidden="true">＋</span></summary>
+      <div class="note-content"><p class="note-label">笑完，问点正经的。</p><p id="reality"></p><blockquote id="ask"></blockquote><p class="note-disclaimer">以上是话术调侃，不代表具体公司的实际情况。</p></div>
+    </details>
+    <section class="sample-tray" aria-label="黑话盲盒">
+      <span class="character-sticker character-yellow" aria-hidden="true"></span>
+      <div class="tray-heading"><h2>没带 JD？拆个盲盒。</h2><span>选个盲盒 ↓</span></div>
+      <div id="samples" class="samples"></div>
+      <p class="sample-note">每盒两条 · 文档原文节选 · 黑话调侃，非岗位定论。</p>
+    </section>
+    <footer class="desk-footer"><span class="character-sticker character-purple" aria-hidden="true"></span><p class="footer-message"><span>黑话不一定是雷。</span><span>但听懂了，再决定要不要接。</span></p><p class="art-credit">原创像素角色 · 秋招破译局</p></footer>
+    <p id="status-announcement" class="sr-only" role="status"></p>
+  </main>
+  <script src="./app.js?v=human-17"></script>
+</body>
+</html>
