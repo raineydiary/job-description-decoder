@@ -20,7 +20,8 @@ https://raineydiary.github.io/job-description-decoder/
 ## 发布产物
 
 - `release/xhs-autumn-jd-decoder-v1.0.0.zip`：小红书部署包
-- `release/xhs-autumn-jd-decoder-icon-v1.png`：1:1 发布图标
+- `release/job-description-decoder-icon-v2-ice-pink.png`：最终 1:1 发布图标（Y2K 冰蓝淡粉版）
+- `release/xhs-autumn-jd-decoder-icon-v1.png`：历史 v1 图标
 - `release/秋招JD黑话翻译器-发布信息与校验摘要.md`：发布信息与校验记录
 
 ## 设计规范
